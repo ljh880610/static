@@ -53,7 +53,7 @@
     </el-main>
     <el-footer >
       <div class="footer-left">
-        <div>
+        <div style="height: 150px;">
           <div style="margin-left: 25%;">
             <ul class="footer-left-title">
               <li >关于我们</li>
@@ -81,12 +81,42 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div style="height:50px;">
           <div style="margin-left: 25%;">
-            <a href="">有情连接：</a>
+            <ul>
+              <li class="footer-left-title-2">有情链接</li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+              <li class="footer-left-title-2"><a style="text-align: left;" href="https://auto.china.com/?sources=SXS-D-baidu_sem" target="_blank">
+                中华网汽车</a></li>
+            </ul>
           </div>
         </div>
-        <div></div>
+        <div style="height:50px;">
+          <div style="margin-left: 25%;">
+            <ul class="footer-left-3">
+              <li style="margin-bottom: 20px;">
+                <a href="" rel="nofollow" class="bo-rr">隐私政策</a>
+                <a href="" rel="nofollow" class="bo-rr">条款及条件</a>
+                <a  href="" class="bo-rr" >xxxxxxxxx</a>
+                <a href="" class="">xxxxxxxx</a>
+              </li>
+              <li style="margin-top: 40px;">
+                <a href="" rel="nofollow" >xxxxxxxx备案信息xxxxxx</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="footer-right">456</div>
     </el-footer>
@@ -102,7 +132,7 @@ export default {
       };
     },
     methods: {
-      handleSelect(key, keyPath) {
+      handleSelect (key, keyPath) {
         console.log(key, keyPath);
       }
     }
@@ -157,14 +187,20 @@ export default {
   .el-container{
         height: -webkit-fill-available;
   }
+
   .el-submenu{
         padding-left: 25px;
+  }
+
+  .el-footer{
+    background-color: #303133;
+    height: auto !important;
   }
 
   .footer-left{
       float: left;
       width: 60%;
-      background-color: darkslateblue;
+      background-color: #303133;
   }
 
   .footer-right{
@@ -184,6 +220,27 @@ export default {
     color:#968e8e;
     margin-top: 10px;
   }
+  .footer-left-title-2{
+    float:left;
+    margin-left:30px;
+    list-style-type:none;
+    color:#ffffff;
+  }
 
-
+  .footer-left-title-2 a{
+     color:#968e8e;
+   }
+  .footer-left-3 .bo-rr{
+    border-right: 1px solid #C6C6C6;
+  }
+  .footer-left-3 a{
+    color:#ffffff;
+    padding: 0px 11px;
+    float:left;
+  }
+  .footer-left-3{
+    margin-left:30px;
+    list-style-type:none;
+    color:#ffffff;
+  }
 </style>
